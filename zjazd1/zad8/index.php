@@ -1,20 +1,20 @@
 <?php
-   $firstNumber = 1;
-   $secondNumber = 4;
-   $thirdNumber = 3;
+   $firstNumber = 7;
+   $secondNumber = 2;
+   $thirdNumber = 6;
 
 
 
    function findMidNumber($firstNumber, $secondNumber, $thirdNumber){
 
        //sprawdzenie drugiej liczby
-       if (($firstNumber < $secondNumber && $secondNumber < $thirdNumber) or
-               ($thirdNumber < $secondNumber && $secondNumber < $firstNumber))
+       if (($firstNumber <= $secondNumber && $secondNumber <= $thirdNumber) or
+               ($thirdNumber <= $secondNumber && $secondNumber <= $firstNumber))
            return $secondNumber;
 
        //sprwadzenie pierwszej liczby
-       else if (($secondNumber < $firstNumber && $firstNumber < $thirdNumber) or
-           ($thirdNumber < $firstNumber && $firstNumber < $secondNumber))
+       else if (($secondNumber <= $firstNumber && $firstNumber <= $thirdNumber) or
+           ($thirdNumber <= $firstNumber && $firstNumber <= $secondNumber))
        return $firstNumber;
 
        else
