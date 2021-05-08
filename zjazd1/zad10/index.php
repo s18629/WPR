@@ -29,5 +29,5 @@ function starsPattern($stars) {
         echo ('<br/>');
     }
 }
-starsPattern(10);
+starsPattern(3);
 ?>
